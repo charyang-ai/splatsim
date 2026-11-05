@@ -1,0 +1,94 @@
+{
+  "robot": "robot_iphone",
+  "iteration": 30000,
+  "gaussians": 2192636,
+  "device": "AMD Radeon Pro W7900D",
+  "torch": "2.11.0+rocm7.14.0",
+  "hip": "7.14.60850",
+  "views": [
+    {
+      "view": 0,
+      "image_name": "frame_00001.png",
+      "size": [
+        1907,
+        1071
+      ],
+      "render_ms": 19.63,
+      "psnr_vs_their_render": 96.18,
+      "max_abs_diff": 1,
+      "pixels_off_by_more_than_2": 0.0,
+      "psnr_ours_vs_gt": 27.52,
+      "psnr_theirs_vs_gt": 27.52
+    },
+    {
+      "view": 3,
+      "image_name": "frame_00004.png",
+      "size": [
+        1907,
+        1071
+      ],
+      "render_ms": 20.66,
+      "psnr_vs_their_render": 96.87,
+      "max_abs_diff": 1,
+      "pixels_off_by_more_than_2": 0.0,
+      "psnr_ours_vs_gt": 27.96,
+      "psnr_theirs_vs_gt": 27.96
+    },
+    {
+      "view": 120,
+      "image_name": "frame_00121.png",
+      "size": [
+        1907,
+        1071
+      ],
+      "render_ms": 15.37,
+      "psnr_vs_their_render": 97.37,
+      "max_abs_diff": 1,
+      "pixels_off_by_more_than_2": 0.0,
+      "psnr_ours_vs_gt": 29.16,
+      "psnr_theirs_vs_gt": 29.16
+    },
+    {
+      "view": 240,
+      "image_name": "frame_00271.png",
+      "size": [
+        1907,
+        1071
+      ],
+      "render_ms": 17.43,
+      "psnr_vs_their_render": 97.31,
+      "max_abs_diff": 1,
+      "pixels_off_by_more_than_2": 0.0,
+      "psnr_ours_vs_gt": 23.49,
+      "psnr_theirs_vs_gt": 23.49
+    },
+    {
+      "view": 360,
+      "image_name": "frame_00391.png",
+      "size": [
+        1907,
+        1071
+      ],
+      "render_ms": 15.59,
+      "psnr_vs_their_render": 97.14,
+      "max_abs_diff": 1,
+      "pixels_off_by_more_than_2": 0.0,
+      "psnr_ours_vs_gt": 25.17,
+      "psnr_theirs_vs_gt": 25.17
+    },
+    {
+      "view": 480,
+      "image_name": "frame_00511.png",
+      "size": [
+        1907,
+        1071
+      ],
+      "render_ms": 15.7,
+      "psnr_vs_their_render": 96.81,
+      "max_abs_diff": 1,
+      "pixels_off_by_more_than_2": 0.0,
+      "psnr_ours_vs_gt": 29.65,
+      "psnr_theirs_vs_gt": 29.65
+    }
+  ]
+}

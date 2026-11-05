@@ -1,0 +1,156 @@
+pybullet build time: Nov  4 2026 14:47:07
+startThreads creating 1 threads.
+starting thread 0
+started thread 0 
+argc=2
+argv[0] = --unused
+argv[1] = --start_demo_name=Physics Server
+ExampleBrowserThreadFunc started
+X11 functions dynamically loaded using dlopen/dlsym OK!
+X11 functions dynamically loaded using dlopen/dlsym OK!
+Creating context
+Created GL 3.3 context
+Direct GLX rendering context obtained
+Making context current
+GL_VENDOR=Mesa
+GL_RENDERER=llvmpipe (LLVM 20.1.2, 256 bits)
+GL_VERSION=4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.4
+GL_SHADING_LANGUAGE_VERSION=4.50
+pthread_getconcurrency()=0
+Version = 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.4
+Vendor = Mesa
+Renderer = llvmpipe (LLVM 20.1.2, 256 bits)
+b3Printf: Selected demo: Physics Server
+startThreads creating 1 threads.
+starting thread 0
+started thread 0 
+MotionThreadFunc thread started
+b3Printf: b3Warning[examples/Importers/ImportURDFDemo/BulletUrdfImporter.cpp,126]:
+
+b3Printf: No inertial data for link, using mass=1, localinertiadiagonal = 1,1,1, identity local inertial frame
+b3Printf: b3Warning[examples/Importers/ImportURDFDemo/BulletUrdfImporter.cpp,126]:
+
+b3Printf: ee_link
+ven = Mesa
+ven = Mesa
+loading model from /opt/venv/lib/python3.12/site-packages/urdf_models/models
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [/opt/venv/lib/python3.12/site-packages/urdf_models/models/plastic_apple/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [./texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [./data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../../../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [/opt/venv/lib/python3.12/site-packages/urdf_models/models/plastic_apple/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [./texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [./data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../../../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [/opt/venv/lib/python3.12/site-packages/urdf_models/models/plate/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [./texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [./data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../../../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [/opt/venv/lib/python3.12/site-packages/urdf_models/models/plate/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [./texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [./data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../../data/texture_map.png]
+
+b3Printf: b3Warning[examples/Importers/ImportMeshUtility/b3ImportMeshUtility.cpp,182]:
+
+b3Printf: not found [../../../../data/texture_map.png]
+
+drop_ee_joint (-1.2186783433572266, -1.2450970691771779, 1.7560555801529536, -2.0817547549038555, -1.570796294663063, -1.2186783433496866, 0.7999999999999996, -0.8000070728762431, 0.7999947291384548, 0.799996381456464, -0.799988452159267, 0.0)
+Loading trained model at iteration 30000
+Reading camera 1/482Reading camera 2/482Reading camera 3/482Reading camera 4/482Reading camera 5/482Reading camera 6/482Reading camera 7/482Reading camera 8/482Reading camera 9/482Reading camera 10/482Reading camera 11/482Reading camera 12/482Reading camera 13/482Reading camera 14/482Reading camera 15/482Reading camera 16/482Reading camera 17/482Reading camera 18/482Reading camera 19/482Reading camera 20/482Reading camera 21/482Reading camera 22/482Reading camera 23/482Reading camera 24/482Reading camera 25/482Reading camera 26/482Reading camera 27/482Reading camera 28/482Reading camera 29/482Reading camera 30/482Reading camera 31/482Reading camera 32/482Reading camera 33/482Reading camera 34/482Reading camera 35/482Reading camera 36/482Reading camera 37/482Reading camera 38/482Reading camera 39/482Reading camera 40/482Reading camera 41/482Reading camera 42/482Reading camera 43/482Reading camera 44/482Reading camera 45/482Reading camera 46/482Reading camera 47/482Reading camera 48/482Reading camera 49/482Reading camera 50/482Reading camera 51/482Reading camera 52/482Reading camera 53/482Reading camera 54/482Reading camera 55/482Reading camera 56/482Reading camera 57/482Reading camera 58/482Reading camera 59/482Reading camera 60/482Reading camera 61/482Reading camera 62/482Reading camera 63/482Reading camera 64/482Reading camera 65/482Reading camera 66/482Reading camera 67/482Reading camera 68/482Reading camera 69/482Reading camera 70/482Reading camera 71/482Reading camera 72/482Reading camera 73/482Reading camera 74/482Reading camera 75/482Reading camera 76/482Reading camera 77/482Reading camera 78/482Reading camera 79/482Reading camera 80/482Reading camera 81/482Reading camera 82/482Reading camera 83/482Reading camera 84/482Reading camera 85/482Reading camera 86/482Reading camera 87/482Reading camera 88/482Reading camera 89/482Reading camera 90/482Reading camera 91/482Reading camera 92/482Reading camera 93/482Reading camera 94/482Reading camera 95/482Reading camera 96/482Reading camera 97/482Reading camera 98/482Reading camera 99/482Reading camera 100/482Reading camera 101/482Reading camera 102/482Reading camera 103/482Reading camera 104/482Reading camera 105/482Reading camera 106/482Reading camera 107/482Reading camera 108/482Reading camera 109/482Reading camera 110/482Reading camera 111/482Reading camera 112/482Reading camera 113/482Reading camera 114/482Reading camera 115/482Reading camera 116/482Reading camera 117/482Reading camera 118/482Reading camera 119/482Reading camera 120/482Reading camera 121/482Reading camera 122/482Reading camera 123/482Reading camera 124/482Reading camera 125/482Reading camera 126/482Reading camera 127/482Reading camera 128/482Reading camera 129/482Reading camera 130/482Reading camera 131/482Reading camera 132/482Reading camera 133/482Reading camera 134/482Reading camera 135/482Reading camera 136/482Reading camera 137/482Reading camera 138/482Reading camera 139/482Reading camera 140/482Reading camera 141/482Reading camera 142/482Reading camera 143/482Reading camera 144/482Reading camera 145/482Reading camera 146/482Reading camera 147/482Reading camera 148/482Reading camera 149/482Reading camera 150/482Reading camera 151/482Reading camera 152/482Reading camera 153/482Reading camera 154/482Reading camera 155/482Reading camera 156/482Reading camera 157/482Reading camera 158/482Reading camera 159/482Reading camera 160/482Reading camera 161/482Reading camera 162/482Reading camera 163/482Reading camera 164/482Reading camera 165/482Reading camera 166/482Reading camera 167/482Reading camera 168/482Reading camera 169/482Reading camera 170/482Reading camera 171/482Reading camera 172/482Reading camera 173/482Reading camera 174/482Reading camera 175/482Reading camera 176/482Reading camera 177/482Reading camera 178/482Reading camera 179/482Reading camera 180/482Reading camera 181/482Reading camera 182/482Reading camera 183/482Reading camera 184/482Reading camera 185/482Reading camera 186/482Reading camera 187/482Reading camera 188/482Reading camera 189/482Reading camera 190/482Reading camera 191/482Reading camera 192/482Reading camera 193/482Reading camera 194/482Reading camera 195/482Reading camera 196/482Reading camera 197/482Reading camera 198/482Reading camera 199/482Reading camera 200/482Reading camera 201/482Reading camera 202/482Reading camera 203/482Reading camera 204/482Reading camera 205/482Reading camera 206/482Reading camera 207/482Reading camera 208/482Reading camera 209/482Reading camera 210/482Reading camera 211/482Reading camera 212/482Reading camera 213/482Reading camera 214/482Reading camera 215/482Reading camera 216/482Reading camera 217/482Reading camera 218/482Reading camera 219/482Reading camera 220/482Reading camera 221/482Reading camera 222/482Reading camera 223/482Reading camera 224/482Reading camera 225/482Reading camera 226/482Reading camera 227/482Reading camera 228/482Reading camera 229/482Reading camera 230/482Reading camera 231/482Reading camera 232/482Reading camera 233/482Reading camera 234/482Reading camera 235/482Reading camera 236/482Reading camera 237/482Reading camera 238/482Reading camera 239/482Reading camera 240/482Reading camera 241/482Reading camera 242/482Reading camera 243/482Reading camera 244/482Reading camera 245/482Reading camera 246/482Reading camera 247/482Reading camera 248/482Reading camera 249/482Reading camera 250/482Reading camera 251/482Reading camera 252/482Reading camera 253/482Reading camera 254/482Reading camera 255/482Reading camera 256/482Reading camera 257/482Reading camera 258/482Reading camera 259/482Reading camera 260/482Reading camera 261/482Reading camera 262/482Reading camera 263/482Reading camera 264/482Reading camera 265/482Reading camera 266/482Reading camera 267/482Reading camera 268/482Reading camera 269/482Reading camera 270/482Reading camera 271/482Reading camera 272/482Reading camera 273/482Reading camera 274/482Reading camera 275/482Reading camera 276/482Reading camera 277/482Reading camera 278/482Reading camera 279/482Reading camera 280/482Reading camera 281/482Reading camera 282/482Reading camera 283/482Reading camera 284/482Reading camera 285/482Reading camera 286/482Reading camera 287/482Reading camera 288/482Reading camera 289/482Reading camera 290/482Reading camera 291/482Reading camera 292/482Reading camera 293/482Reading camera 294/482Reading camera 295/482Reading camera 296/482Reading camera 297/482Reading camera 298/482Reading camera 299/482Reading camera 300/482Reading camera 301/482Reading camera 302/482Reading camera 303/482Reading camera 304/482Reading camera 305/482Reading camera 306/482Reading camera 307/482Reading camera 308/482Reading camera 309/482Reading camera 310/482Reading camera 311/482Reading camera 312/482Reading camera 313/482Reading camera 314/482Reading camera 315/482Reading camera 316/482Reading camera 317/482Reading camera 318/482Reading camera 319/482Reading camera 320/482Reading camera 321/482Reading camera 322/482Reading camera 323/482Reading camera 324/482Reading camera 325/482Reading camera 326/482Reading camera 327/482Reading camera 328/482Reading camera 329/482Reading camera 330/482Reading camera 331/482Reading camera 332/482Reading camera 333/482Reading camera 334/482Reading camera 335/482Reading camera 336/482Reading camera 337/482Reading camera 338/482Reading camera 339/482Reading camera 340/482Reading camera 341/482Reading camera 342/482Reading camera 343/482Reading camera 344/482Reading camera 345/482Reading camera 346/482Reading camera 347/482Reading camera 348/482Reading camera 349/482Reading camera 350/482Reading camera 351/482Reading camera 352/482Reading camera 353/482Reading camera 354/482Reading camera 355/482Reading camera 356/482Reading camera 357/482Reading camera 358/482Reading camera 359/482Reading camera 360/482Reading camera 361/482Reading camera 362/482Reading camera 363/482Reading camera 364/482Reading camera 365/482Reading camera 366/482Reading camera 367/482Reading camera 368/482Reading camera 369/482Reading camera 370/482Reading camera 371/482Reading camera 372/482Reading camera 373/482Reading camera 374/482Reading camera 375/482Reading camera 376/482Reading camera 377/482Reading camera 378/482Reading camera 379/482Reading camera 380/482Reading camera 381/482Reading camera 382/482Reading camera 383/482Reading camera 384/482Reading camera 385/482Reading camera 386/482Reading camera 387/482Reading camera 388/482Reading camera 389/482Reading camera 390/482Reading camera 391/482Reading camera 392/482Reading camera 393/482Reading camera 394/482Reading camera 395/482Reading camera 396/482Reading camera 397/482Reading camera 398/482Reading camera 399/482Reading camera 400/482Reading camera 401/482Reading camera 402/482Reading camera 403/482Reading camera 404/482Reading camera 405/482Reading camera 406/482Reading camera 407/482Reading camera 408/482Reading camera 409/482Reading camera 410/482Reading camera 411/482Reading camera 412/482Reading camera 413/482Reading camera 414/482Reading camera 415/482Reading camera 416/482Reading camera 417/482Reading camera 418/482Reading camera 419/482Reading camera 420/482Reading camera 421/482Reading camera 422/482Reading camera 423/482Reading camera 424/482Reading camera 425/482Reading camera 426/482Reading camera 427/482Reading camera 428/482Reading camera 429/482Reading camera 430/482Reading camera 431/482Reading camera 432/482Reading camera 433/482Reading camera 434/482Reading camera 435/482Reading camera 436/482Reading camera 437/482Reading camera 438/482Reading camera 439/482Reading camera 440/482Reading camera 441/482Reading camera 442/482Reading camera 443/482Reading camera 444/482Reading camera 445/482Reading camera 446/482Reading camera 447/482Reading camera 448/482Reading camera 449/482Reading camera 450/482Reading camera 451/482Reading camera 452/482Reading camera 453/482Reading camera 454/482Reading camera 455/482Reading camera 456/482Reading camera 457/482Reading camera 458/482Reading camera 459/482Reading camera 460/482Reading camera 461/482Reading camera 462/482Reading camera 463/482Reading camera 464/482Reading camera 465/482Reading camera 466/482Reading camera 467/482Reading camera 468/482Reading camera 469/482Reading camera 470/482Reading camera 471/482Reading camera 472/482Reading camera 473/482Reading camera 474/482Reading camera 475/482Reading camera 476/482Reading camera 477/482Reading camera 478/482Reading camera 479/482Reading camera 480/482Reading camera 481/482Reading camera 482/482
+Loading Training Cameras
+[ INFO ] Encountered quite large input images (>1.6K pixels width), rescaling to 1.6K.
+ If this is not desired, please explicitly specify '--resolution/-r' as 1
+Loading Test Cameras
+Ready to serve.

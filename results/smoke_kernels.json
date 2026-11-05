@@ -1,0 +1,24 @@
+{
+  "device": "AMD Radeon Pro W7900D",
+  "torch": "2.11.0+rocm7.14.0",
+  "hip": "7.14.60850",
+  "simple_knn": {
+    "points": 20000,
+    "max_rel_err": 2.6370548766863067e-07,
+    "mean_rel_err": 4.723880309143169e-08
+  },
+  "rasterizer": {
+    "gaussians": 200000,
+    "size": [
+      1280,
+      720
+    ],
+    "visible": 199882,
+    "image_mean": 0.21310533583164215,
+    "image_max": 1.1434637308120728,
+    "forward_identical": true,
+    "forward_ms": 1.94,
+    "grads_finite": true,
+    "grad_abs_mean_means3D": 1.583156943321228
+  }
+}

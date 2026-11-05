@@ -1,0 +1,210 @@
+--- a/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu
++++ b/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu
+@@ -16,14 +16,21 @@
+ #include <numeric>
+ #include <cuda.h>
+ #include "cuda_runtime.h"
++#if defined(__HIP_PLATFORM_AMD__)
++#include <hipcub/hipcub.hpp>
++namespace cub = hipcub;
++#else
+ #include "device_launch_parameters.h"
+ #include <cub/cub.cuh>
+ #include <cub/device/device_radix_sort.cuh>
++#endif
+ #define GLM_FORCE_CUDA
+ #include <glm/glm.hpp>
+ 
+ #include <cooperative_groups.h>
++#if !defined(__HIP_PLATFORM_AMD__)
+ #include <cooperative_groups/reduce.h>
++#endif
+ namespace cg = cooperative_groups;
+ 
+ #include "auxiliary.h"
+@@ -145,7 +152,7 @@
+ 	float* projmatrix,
+ 	bool* present)
+ {
+-	checkFrustum << <(P + 255) / 256, 256 >> > (
++	checkFrustum <<<(P + 255) / 256, 256 >>> (
+ 		P,
+ 		means3D,
+ 		viewmatrix, projmatrix,
+@@ -289,7 +296,7 @@
+ 
+ 	// For each instance to be rendered, produce adequate [ tile | depth ] key 
+ 	// and corresponding dublicated Gaussian indices to be sorted
+-	duplicateWithKeys << <(P + 255) / 256, 256 >> > (
++	duplicateWithKeys <<<(P + 255) / 256, 256 >>> (
+ 		P,
+ 		geomState.means2D,
+ 		geomState.depths,
+@@ -314,7 +321,7 @@
+ 
+ 	// Identify start and end of per-tile workloads in sorted list
+ 	if (num_rendered > 0)
+-		identifyTileRanges << <(num_rendered + 255) / 256, 256 >> > (
++		identifyTileRanges <<<(num_rendered + 255) / 256, 256 >>> (
+ 			num_rendered,
+ 			binningState.point_list_keys,
+ 			imgState.ranges);
+--- a/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu
++++ b/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu
+@@ -12,7 +12,9 @@
+ #include "forward.h"
+ #include "auxiliary.h"
+ #include <cooperative_groups.h>
++#if !defined(__HIP_PLATFORM_AMD__)
+ #include <cooperative_groups/reduce.h>
++#endif
+ namespace cg = cooperative_groups;
+ 
+ // Forward method for converting the input spherical harmonics
+@@ -411,7 +413,7 @@
+ 	float* depths,
+ 	float* depth)
+ {
+-	renderCUDA<NUM_CHANNELS> << <grid, block >> > (
++	renderCUDA<NUM_CHANNELS> <<<grid, block >>> (
+ 		ranges,
+ 		point_list,
+ 		W, H,
+@@ -453,7 +455,7 @@
+ 	bool prefiltered,
+ 	bool antialiasing)
+ {
+-	preprocessCUDA<NUM_CHANNELS> << <(P + 255) / 256, 256 >> > (
++	preprocessCUDA<NUM_CHANNELS> <<<(P + 255) / 256, 256 >>> (
+ 		P, D, M,
+ 		means3D,
+ 		scales,
+--- a/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/backward.cu
++++ b/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/backward.cu
+@@ -12,7 +12,9 @@
+ #include "backward.h"
+ #include "auxiliary.h"
+ #include <cooperative_groups.h>
++#if !defined(__HIP_PLATFORM_AMD__)
+ #include <cooperative_groups/reduce.h>
++#endif
+ namespace cg = cooperative_groups;
+ 
+ __device__ __forceinline__ float sq(float x) { return x * x; }
+@@ -669,7 +671,7 @@
+ 	// Somewhat long, thus it is its own kernel rather than being part of 
+ 	// "preprocess". When done, loss gradient w.r.t. 3D means has been
+ 	// modified and gradient w.r.t. 3D covariance matrix has been computed.	
+-	computeCov2DCUDA << <(P + 255) / 256, 256 >> > (
++	computeCov2DCUDA <<<(P + 255) / 256, 256 >>> (
+ 		P,
+ 		means3D,
+ 		radii,
+@@ -690,7 +692,7 @@
+ 	// Propagate gradients for remaining steps: finish 3D mean gradients,
+ 	// propagate color gradients to SH (if desireD), propagate 3D covariance
+ 	// matrix gradients to scale and rotation.
+-	preprocessCUDA<NUM_CHANNELS> << < (P + 255) / 256, 256 >> > (
++	preprocessCUDA<NUM_CHANNELS> <<< (P + 255) / 256, 256 >>> (
+ 		P, D, M,
+ 		(float3*)means3D,
+ 		radii,
+@@ -731,7 +733,7 @@
+ 	float* dL_dcolors,
+ 	float* dL_dinvdepths)
+ {
+-	renderCUDA<NUM_CHANNELS> << <grid, block >> >(
++	renderCUDA<NUM_CHANNELS> <<<grid, block >>>(
+ 		ranges,
+ 		point_list,
+ 		W, H,
+--- a/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.h
++++ b/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.h
+@@ -14,7 +14,9 @@
+ 
+ #include <cuda.h>
+ #include "cuda_runtime.h"
++#if !defined(__HIP_PLATFORM_AMD__)
+ #include "device_launch_parameters.h"
++#endif
+ #define GLM_FORCE_CUDA
+ #include <glm/glm.hpp>
+ 
+--- a/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/backward.h
++++ b/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/backward.h
+@@ -14,7 +14,9 @@
+ 
+ #include <cuda.h>
+ #include "cuda_runtime.h"
++#if !defined(__HIP_PLATFORM_AMD__)
+ #include "device_launch_parameters.h"
++#endif
+ #define GLM_FORCE_CUDA
+ #include <glm/glm.hpp>
+ 
+--- a/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/auxiliary.h
++++ b/submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/auxiliary.h
+@@ -168,7 +168,11 @@
+ 		if (prefiltered)
+ 		{
+ 			printf("Point is filtered although prefiltered is set. This shouldn't happen!");
++#if defined(__HIP_PLATFORM_AMD__)
++			__builtin_trap();
++#else
+ 			__trap();
++#endif
+ 		}
+ 		return false;
+ 	}
+--- a/submodules/simple-knn/simple_knn.cu
++++ b/submodules/simple-knn/simple_knn.cu
+@@ -12,18 +12,27 @@
+ #define BOX_SIZE 1024
+ 
+ #include "cuda_runtime.h"
+-#include "device_launch_parameters.h"
+ #include "simple_knn.h"
++#if defined(__HIP_PLATFORM_AMD__)
++#include <hipcub/hipcub.hpp>
++namespace cub = hipcub;
++#else
++#include "device_launch_parameters.h"
+ #include <cub/cub.cuh>
+ #include <cub/device/device_radix_sort.cuh>
++#endif
+ #include <vector>
+ #include <float.h>
+ #include <cuda_runtime_api.h>
+ #include <thrust/device_vector.h>
+ #include <thrust/sequence.h>
++#if !defined(__HIP_PLATFORM_AMD__)
+ #define __CUDACC__
++#endif
+ #include <cooperative_groups.h>
++#if !defined(__HIP_PLATFORM_AMD__)
+ #include <cooperative_groups/reduce.h>
++#endif
+ 
+ namespace cg = cooperative_groups;
+ 
+@@ -202,7 +211,7 @@
+ 
+ 	thrust::device_vector<uint32_t> morton(P);
+ 	thrust::device_vector<uint32_t> morton_sorted(P);
+-	coord2Morton << <(P + 255) / 256, 256 >> > (P, points, minn, maxx, morton.data().get());
++	coord2Morton <<<(P + 255) / 256, 256 >>> (P, points, minn, maxx, morton.data().get());
+ 
+ 	thrust::device_vector<uint32_t> indices(P);
+ 	thrust::sequence(indices.begin(), indices.end());
+@@ -215,8 +224,8 @@
+ 
+ 	uint32_t num_boxes = (P + BOX_SIZE - 1) / BOX_SIZE;
+ 	thrust::device_vector<MinMax> boxes(num_boxes);
+-	boxMinMax << <num_boxes, BOX_SIZE >> > (P, points, indices_sorted.data().get(), boxes.data().get());
+-	boxMeanDist << <num_boxes, BOX_SIZE >> > (P, points, indices_sorted.data().get(), boxes.data().get(), meanDists);
++	boxMinMax <<<num_boxes, BOX_SIZE >>> (P, points, indices_sorted.data().get(), boxes.data().get());
++	boxMeanDist <<<num_boxes, BOX_SIZE >>> (P, points, indices_sorted.data().get(), boxes.data().get(), meanDists);
+ 
+ 	cudaFree(result);
+ }
+\ No newline at end of file

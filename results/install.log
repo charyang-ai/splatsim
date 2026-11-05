@@ -1,0 +1,631 @@
+=== bootstrap 2026-11-04T14:32:06+00:00 node=/dev/dri/renderD131
+3957e76b1ce173dcc8cfb835365644c2a4793c783cd0e113e0231ff9c3d57591
+2.11.0+rocm7.14.0 7.14.60850 1 AMD Radeon Pro W7900D
+renderD131
+1
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 90494  100 90494    0     0   127k      0 --:--:-- --:--:-- --:--:--  127k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 63  302k   63  192k    0     0   114k      0  0:00:02  0:00:01  0:00:01  114k
+100  302k  100  302k    0     0   155k      0  0:00:01  0:00:01 --:--:--  155k
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0  401k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  401k  100  401k    0     0   258k      0  0:00:01  0:00:01 --:--:--  258k
+hipcub
+rocprim
+thrust
+Fetched 33.7 MB in 6min 33s (85.7 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+build-essential is already the newest version (12.10ubuntu1).
+swig is already the newest version (4.2.0-2ubuntu1).
+The following additional packages will be installed:
+  fontconfig fontconfig-config fonts-dejavu-core fonts-dejavu-mono
+  gir1.2-glib-2.0 libaom3 libasound2-data libasound2t64 libass9 libasyncns0
+  libavc1394-0 libavcodec60 libavdevice60 libavfilter9 libavformat60
+  libavutil58 libblas3 libbluray2 libbs2b0 libcaca0 libcairo-gobject2
+  libcairo2 libcdio-cdda2t64 libcdio-paranoia2t64 libcdio19t64 libchromaprint1
+  libcjson1 libcodec2-1.2 libdatrie1 libdav1d7 libdc1394-25 libdecor-0-0
+  libdeflate0 libegl-mesa0 libflac12t64 libflite1 libfontenc1 libfreetype6
+  libfribidi0 libgbm1 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-common libgfortran5
+  libglib2.0-bin libglib2.0-data libglvnd0 libglx0 libgme0 libgraphite2-3
+  libgsm1 libharfbuzz0b libhwy1t64 libiec61883-0 libjack-jackd2-0 libjbig0
+  libjxl0.7 liblapack3 liblcms2-2 liblerc4 liblilv-0-0 libllvm20
+  libmbedcrypto7t64 libmp3lame0 libmpg123-0t64 libmysofa1 libnorm1t64 libogg0
+  libopenal-data libopenal1 libopenjp2-7 libopenmpt0t64 libopus0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpgm-5.3-0t64
+  libpixman-1-0 libplacebo338 libpng16-16t64 libpocketsphinx3 libpostproc57
+  libpulse0 librabbitmq4 librav1e0 libraw1394-11 librist4 librsvg2-2
+  librubberband2 libsamplerate0 libsdl2-2.0-0 libsensors-config libsensors5
+  libserd-0-0 libsharpyuv0 libshine3 libslang2 libsnappy1v5 libsndfile1
+  libsndio7.0 libsord-0-0 libsoxr0 libspeex1 libsphinxbase3t64 libsratom-0-0
+  libsrt1.5-gnutls libssh-4 libssh-gcrypt-4 libsvtav1enc1d1 libswresample4
+  libswscale7 libthai-data libthai0 libtheora0 libtiff6 libtwolame0
+  libudfread0 libunibreak5 libusb-1.0-0 libva-drm2 libva-x11-2 libva2
+  libvdpau1 libvidstab1.1 libvorbis0a libvorbisenc2 libvorbisfile3 libvpl2
+  libvpx9 libvulkan1 libwayland-client0 libwayland-cursor0 libwayland-egl1
+  libwebp7 libwebpmux3 libx11-6 libx11-data libx11-xcb1 libx264-164
+  libx265-199 libxau6 libxaw7 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+  libxcb-render0 libxcb-shm0 libxcb-sync1 libxcb-util1 libxcb-xfixes0 libxcb1
+  libxcursor1 libxdmcp6 libxfixes3 libxfont2 libxi6 libxkbcommon0 libxkbfile1
+  libxmu6 libxmuu1 libxpm4 libxrandr2 libxshmfence1 libxss1 libxt6t64 libxv1
+  libxvidcore4 libxxf86vm1 libzimg2 libzix-0-0 libzmq5 libzvbi-common
+  libzvbi0t64 mesa-libgallium shared-mime-info x11-common x11-xkb-utils xauth
+  xkb-data xserver-common
+Suggested packages:
+  ffmpeg-doc alsa-utils libasound2-plugins libcuda1 libnvcuvid1
+  libnvidia-encode1 libbluray-bdj low-memory-monitor jackd2 liblcms2-utils
+  libportaudio2 opus-tools pulseaudio libraw1394-doc librsvg2-bin xdg-utils
+  lm-sensors serdi sndiod sordi speex
+Recommended packages:
+  alsa-ucm-conf alsa-topology-conf libaacs0 default-libdecor-0-plugin-1
+  | libdecor-0-plugin-1 libgdk-pixbuf2.0-bin xdg-user-dirs pocketsphinx-en-us
+  librsvg2-common va-driver-all | va-driver vdpau-driver-all | vdpau-driver
+  mesa-vulkan-drivers | vulkan-icd xfonts-base
+The following NEW packages will be installed:
+  ffmpeg fontconfig fontconfig-config fonts-dejavu-core fonts-dejavu-mono
+  libaom3 libasound2-data libasound2t64 libass9 libasyncns0 libavc1394-0
+  libavcodec60 libavdevice60 libavfilter9 libavformat60 libavutil58 libblas3
+  libbluray2 libbs2b0 libcaca0 libcairo-gobject2 libcairo2 libcdio-cdda2t64
+  libcdio-paranoia2t64 libcdio19t64 libchromaprint1 libcjson1 libcodec2-1.2
+  libdatrie1 libdav1d7 libdc1394-25 libdecor-0-0 libdeflate0 libegl-mesa0
+  libegl1 libflac12t64 libflite1 libfontconfig1 libfontenc1 libfreetype6
+  libfribidi0 libgbm1 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-common libgfortran5
+  libgl1 libgl1-mesa-dri libglvnd0 libglx-mesa0 libglx0 libgme0 libgraphite2-3
+  libgsm1 libharfbuzz0b libhwy1t64 libice6 libiec61883-0 libjack-jackd2-0
+  libjbig0 libjxl0.7 liblapack3 liblcms2-2 liblerc4 liblilv-0-0 libllvm20
+  libmbedcrypto7t64 libmp3lame0 libmpg123-0t64 libmysofa1 libnorm1t64 libogg0
+  libopenal-data libopenal1 libopenjp2-7 libopenmpt0t64 libopus0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpgm-5.3-0t64
+  libpixman-1-0 libplacebo338 libpng16-16t64 libpocketsphinx3 libpostproc57
+  libpulse0 librabbitmq4 librav1e0 libraw1394-11 librist4 librsvg2-2
+  librubberband2 libsamplerate0 libsdl2-2.0-0 libsensors-config libsensors5
+  libserd-0-0 libsharpyuv0 libshine3 libslang2 libsm6 libsnappy1v5 libsndfile1
+  libsndio7.0 libsord-0-0 libsoxr0 libspeex1 libsphinxbase3t64 libsratom-0-0
+  libsrt1.5-gnutls libssh-gcrypt-4 libsvtav1enc1d1 libswresample4 libswscale7
+  libthai-data libthai0 libtheora0 libtiff6 libtwolame0 libudfread0
+  libunibreak5 libusb-1.0-0 libva-drm2 libva-x11-2 libva2 libvdpau1
+  libvidstab1.1 libvorbis0a libvorbisenc2 libvorbisfile3 libvpl2 libvpx9
+  libvulkan1 libwayland-client0 libwayland-cursor0 libwayland-egl1 libwebp7
+  libwebpmux3 libx11-6 libx11-data libx11-xcb1 libx264-164 libx265-199 libxau6
+  libxaw7 libxcb-dri3-0 libxcb-glx0 libxcb-icccm4 libxcb-image0
+  libxcb-keysyms1 libxcb-present0 libxcb-randr0 libxcb-render-util0
+  libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-util1
+  libxcb-xfixes0 libxcb-xinerama0 libxcb-xkb1 libxcb1 libxcursor1 libxdmcp6
+  libxext6 libxfixes3 libxfont2 libxi6 libxkbcommon-x11-0 libxkbcommon0
+  libxkbfile1 libxmu6 libxmuu1 libxpm4 libxrandr2 libxrender1 libxshmfence1
+  libxss1 libxt6t64 libxv1 libxvidcore4 libxxf86vm1 libzimg2 libzix-0-0
+  libzmq5 libzvbi-common libzvbi0t64 mesa-libgallium shared-mime-info
+  x11-common x11-xkb-utils xauth xkb-data xserver-common xvfb
+The following packages will be upgraded:
+  gir1.2-glib-2.0 libglib2.0-0t64 libglib2.0-bin libglib2.0-data libssh-4
+5 upgraded, 195 newly installed, 0 to remove and 100 not upgraded.
+Need to get 121 MB of archives.
+After this operation, 410 MB of additional disk space will be used.
+install failed
+=== bootstrap 2026-11-04T14:39:44+00:00 node=/dev/dri/renderD131
+2.11.0+rocm7.14.0 7.14.60850 1 AMD Radeon Pro W7900D
+renderD131
+1
+Fetched 33.7 MB in 1min 3s (536 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+build-essential is already the newest version (12.10ubuntu1).
+swig is already the newest version (4.2.0-2ubuntu1).
+The following additional packages will be installed:
+  fontconfig fontconfig-config fonts-dejavu-core fonts-dejavu-mono
+  gir1.2-glib-2.0 libaom3 libasound2-data libasound2t64 libass9 libasyncns0
+  libavc1394-0 libavcodec60 libavdevice60 libavfilter9 libavformat60
+  libavutil58 libblas3 libbluray2 libbs2b0 libcaca0 libcairo-gobject2
+  libcairo2 libcdio-cdda2t64 libcdio-paranoia2t64 libcdio19t64 libchromaprint1
+  libcjson1 libcodec2-1.2 libdatrie1 libdav1d7 libdc1394-25 libdecor-0-0
+  libdeflate0 libegl-mesa0 libflac12t64 libflite1 libfontenc1 libfreetype6
+  libfribidi0 libgbm1 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-common libgfortran5
+  libglib2.0-bin libglib2.0-data libglvnd0 libglx0 libgme0 libgraphite2-3
+  libgsm1 libharfbuzz0b libhwy1t64 libiec61883-0 libjack-jackd2-0 libjbig0
+  libjxl0.7 liblapack3 liblcms2-2 liblerc4 liblilv-0-0 libllvm20
+  libmbedcrypto7t64 libmp3lame0 libmpg123-0t64 libmysofa1 libnorm1t64 libogg0
+  libopenal-data libopenal1 libopenjp2-7 libopenmpt0t64 libopus0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpgm-5.3-0t64
+  libpixman-1-0 libplacebo338 libpng16-16t64 libpocketsphinx3 libpostproc57
+  libpulse0 librabbitmq4 librav1e0 libraw1394-11 librist4 librsvg2-2
+  librubberband2 libsamplerate0 libsdl2-2.0-0 libsensors-config libsensors5
+  libserd-0-0 libsharpyuv0 libshine3 libslang2 libsnappy1v5 libsndfile1
+  libsndio7.0 libsord-0-0 libsoxr0 libspeex1 libsphinxbase3t64 libsratom-0-0
+  libsrt1.5-gnutls libssh-4 libssh-gcrypt-4 libsvtav1enc1d1 libswresample4
+  libswscale7 libthai-data libthai0 libtheora0 libtiff6 libtwolame0
+  libudfread0 libunibreak5 libusb-1.0-0 libva-drm2 libva-x11-2 libva2
+  libvdpau1 libvidstab1.1 libvorbis0a libvorbisenc2 libvorbisfile3 libvpl2
+  libvpx9 libvulkan1 libwayland-client0 libwayland-cursor0 libwayland-egl1
+  libwebp7 libwebpmux3 libx11-6 libx11-data libx11-xcb1 libx264-164
+  libx265-199 libxau6 libxaw7 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+  libxcb-render0 libxcb-shm0 libxcb-sync1 libxcb-util1 libxcb-xfixes0 libxcb1
+  libxcursor1 libxdmcp6 libxfixes3 libxfont2 libxi6 libxkbcommon0 libxkbfile1
+  libxmu6 libxmuu1 libxpm4 libxrandr2 libxshmfence1 libxss1 libxt6t64 libxv1
+  libxvidcore4 libxxf86vm1 libzimg2 libzix-0-0 libzmq5 libzvbi-common
+  libzvbi0t64 mesa-libgallium shared-mime-info x11-common x11-xkb-utils xauth
+  xkb-data xserver-common
+Suggested packages:
+  ffmpeg-doc alsa-utils libasound2-plugins libcuda1 libnvcuvid1
+  libnvidia-encode1 libbluray-bdj low-memory-monitor jackd2 liblcms2-utils
+  libportaudio2 opus-tools pulseaudio libraw1394-doc librsvg2-bin xdg-utils
+  lm-sensors serdi sndiod sordi speex
+Recommended packages:
+  alsa-ucm-conf alsa-topology-conf libaacs0 default-libdecor-0-plugin-1
+  | libdecor-0-plugin-1 libgdk-pixbuf2.0-bin xdg-user-dirs pocketsphinx-en-us
+  librsvg2-common va-driver-all | va-driver vdpau-driver-all | vdpau-driver
+  mesa-vulkan-drivers | vulkan-icd xfonts-base
+The following NEW packages will be installed:
+  ffmpeg fontconfig fontconfig-config fonts-dejavu-core fonts-dejavu-mono
+  libaom3 libasound2-data libasound2t64 libass9 libasyncns0 libavc1394-0
+  libavcodec60 libavdevice60 libavfilter9 libavformat60 libavutil58 libblas3
+  libbluray2 libbs2b0 libcaca0 libcairo-gobject2 libcairo2 libcdio-cdda2t64
+  libcdio-paranoia2t64 libcdio19t64 libchromaprint1 libcjson1 libcodec2-1.2
+  libdatrie1 libdav1d7 libdc1394-25 libdecor-0-0 libdeflate0 libegl-mesa0
+  libegl1 libflac12t64 libflite1 libfontconfig1 libfontenc1 libfreetype6
+  libfribidi0 libgbm1 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-common libgfortran5
+  libgl1 libgl1-mesa-dri libglvnd0 libglx-mesa0 libglx0 libgme0 libgraphite2-3
+  libgsm1 libharfbuzz0b libhwy1t64 libice6 libiec61883-0 libjack-jackd2-0
+  libjbig0 libjxl0.7 liblapack3 liblcms2-2 liblerc4 liblilv-0-0 libllvm20
+  libmbedcrypto7t64 libmp3lame0 libmpg123-0t64 libmysofa1 libnorm1t64 libogg0
+  libopenal-data libopenal1 libopenjp2-7 libopenmpt0t64 libopus0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpgm-5.3-0t64
+  libpixman-1-0 libplacebo338 libpng16-16t64 libpocketsphinx3 libpostproc57
+  libpulse0 librabbitmq4 librav1e0 libraw1394-11 librist4 librsvg2-2
+  librubberband2 libsamplerate0 libsdl2-2.0-0 libsensors-config libsensors5
+  libserd-0-0 libsharpyuv0 libshine3 libslang2 libsm6 libsnappy1v5 libsndfile1
+  libsndio7.0 libsord-0-0 libsoxr0 libspeex1 libsphinxbase3t64 libsratom-0-0
+  libsrt1.5-gnutls libssh-gcrypt-4 libsvtav1enc1d1 libswresample4 libswscale7
+  libthai-data libthai0 libtheora0 libtiff6 libtwolame0 libudfread0
+  libunibreak5 libusb-1.0-0 libva-drm2 libva-x11-2 libva2 libvdpau1
+  libvidstab1.1 libvorbis0a libvorbisenc2 libvorbisfile3 libvpl2 libvpx9
+  libvulkan1 libwayland-client0 libwayland-cursor0 libwayland-egl1 libwebp7
+  libwebpmux3 libx11-6 libx11-data libx11-xcb1 libx264-164 libx265-199 libxau6
+  libxaw7 libxcb-dri3-0 libxcb-glx0 libxcb-icccm4 libxcb-image0
+  libxcb-keysyms1 libxcb-present0 libxcb-randr0 libxcb-render-util0
+  libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-util1
+  libxcb-xfixes0 libxcb-xinerama0 libxcb-xkb1 libxcb1 libxcursor1 libxdmcp6
+  libxext6 libxfixes3 libxfont2 libxi6 libxkbcommon-x11-0 libxkbcommon0
+  libxkbfile1 libxmu6 libxmuu1 libxpm4 libxrandr2 libxrender1 libxshmfence1
+  libxss1 libxt6t64 libxv1 libxvidcore4 libxxf86vm1 libzimg2 libzix-0-0
+  libzmq5 libzvbi-common libzvbi0t64 mesa-libgallium shared-mime-info
+  x11-common x11-xkb-utils xauth xkb-data xserver-common xvfb
+The following packages will be upgraded:
+  gir1.2-glib-2.0 libglib2.0-0t64 libglib2.0-bin libglib2.0-data libssh-4
+5 upgraded, 195 newly installed, 0 to remove and 100 not upgraded.
+Need to get 121 MB of archives.
+After this operation, 410 MB of additional disk space will be used.
+Fetched 121 MB in 3min 21s (602 kB/s)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 29606 files and directories currently installed.)
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+No schema files found: doing nothing.
+update-alternatives: using /usr/lib/x86_64-linux-gnu/blas/libblas.so.3 to provide /usr/lib/x86_64-linux-gnu/libblas.so.3 (libblas.so.3-x86_64-linux-gnu) in auto mode
+update-alternatives: using /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3 to provide /usr/lib/x86_64-linux-gnu/liblapack.so.3 (liblapack.so.3-x86_64-linux-gnu) in auto mode
+Regenerating fonts cache... done.
+torch before: 2.11.0+rocm7.14.0
+patched          submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu
+patched          submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu
+patched          submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/backward.cu
+patched          submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.h
+patched          submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/backward.h
+patched          submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/auxiliary.h
+patched          submodules/simple-knn/simple_knn.cu
+launch syntax    submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/rasterizer_impl.cu
+launch syntax    submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/forward.cu
+launch syntax    submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization/cuda_rasterizer/backward.cu
+launch syntax    submodules/simple-knn/simple_knn.cu
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Processing ./submodules/gaussian-splatting-wrapper/gaussian_splatting/submodules/diff-gaussian-rasterization
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: diff_gaussian_rasterization
+  Building wheel for diff_gaussian_rasterization (pyproject.toml): started
+  Building wheel for diff_gaussian_rasterization (pyproject.toml): finished with status 'done'
+  Created wheel for diff_gaussian_rasterization: filename=diff_gaussian_rasterization-0.0.0-cp312-cp312-linux_x86_64.whl size=3192064 sha256=4459b021e03e7f033a201ee7cd1ca905a5a0d3c51f08a068d86c13da7ed0ee17
+  Stored in directory: /root/.cache/pip/wheels/80/1c/2f/e9cf9cc4650df26fb817f2c85fc9a5a97af99b3614d3ac3092
+Successfully built diff_gaussian_rasterization
+Installing collected packages: diff_gaussian_rasterization
+Successfully installed diff_gaussian_rasterization-0.0.0
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Processing ./submodules/pybullet-URDF-models
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Processing ./submodules/pybullet-playground-wrapper
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Processing ./submodules/ghalton
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: urdf_models, pybullet_playground, ghalton
+  Building wheel for urdf_models (pyproject.toml): started
+  Building wheel for urdf_models (pyproject.toml): finished with status 'done'
+  Created wheel for urdf_models: filename=urdf_models-0.1-py3-none-any.whl size=296886631 sha256=1caa8707f79661bdf6eecafdc2ec30a22810a778a6045bf6b8d2ef3e672e8786
+  Stored in directory: /root/.cache/pip/wheels/37/8a/0e/1865f07813ac6824e4c5edb15e3f5a240917092f0b0cc4c698
+  Building wheel for pybullet_playground (pyproject.toml): started
+  Building wheel for pybullet_playground (pyproject.toml): finished with status 'done'
+  Created wheel for pybullet_playground: filename=pybullet_playground-0.1.0-py3-none-any.whl size=1043 sha256=64f2f13c7ea7506af8b6669352a3f7474a256b6da1db173f56c7b0e73e1858d7
+  Stored in directory: /root/.cache/pip/wheels/a3/ee/ee/154428ab15791e4abd83a8f7227376d4db51c6ba063e68c656
+  Building wheel for ghalton (pyproject.toml): started
+  Building wheel for ghalton (pyproject.toml): finished with status 'done'
+  Created wheel for ghalton: filename=ghalton-0.6.2-cp312-cp312-linux_x86_64.whl size=293792 sha256=f9a1e299abc8519f4f71d78bd1ccee0d746322dcd20a742e9eac0086c6df64a1
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_mtam5n6/wheels/59/de/30/a9f68036155eb9ef968ca06838523827c7e438fb28d3826cd4
+Successfully built urdf_models pybullet_playground ghalton
+Installing collected packages: pybullet_playground, ghalton, urdf_models
+Successfully installed ghalton-0.6.2 pybullet_playground-0.1.0 urdf_models-0.1
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Obtaining file:///workspace/src/submodules/gaussian-splatting-wrapper
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: gaussian_splatting
+  Building editable for gaussian_splatting (pyproject.toml): started
+  Building editable for gaussian_splatting (pyproject.toml): finished with status 'done'
+  Created wheel for gaussian_splatting: filename=gaussian_splatting-0.1.0-0.editable-py3-none-any.whl size=2801 sha256=b4af51d130ee4dfbfef923560608befb57183cb7f5e22e0f590302035f34b81c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-hg_q83f7/wheels/58/17/e2/d27c55c4d6aea13f3cd19f3643698e56303f1ce081c12e5d5d
+Successfully built gaussian_splatting
+Installing collected packages: gaussian_splatting
+Successfully installed gaussian_splatting-0.1.0
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Obtaining file:///workspace/src/submodules/gello_software
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /opt/venv/lib/python3.12/site-packages (from gello==0.0.1) (2.5.1)
+Building wheels for collected packages: gello
+  Building editable for gello (pyproject.toml): started
+  Building editable for gello (pyproject.toml): finished with status 'done'
+  Created wheel for gello: filename=gello-0.0.1-0.editable-py3-none-any.whl size=8474 sha256=61c121e451b56fdc9e837958fb7e00b64f3b3a6caa462b3ccc927c348c09d279
+  Stored in directory: /tmp/pip-ephem-wheel-cache-vn3qe2f0/wheels/e4/aa/3c/bae1105299ca4002ab78cf1a8f833e1ab0e71ededdbb623ef1
+Successfully built gello
+Installing collected packages: gello
+Successfully installed gello-0.0.1
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Processing ./submodules/simple-knn
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: simple_knn
+  Building wheel for simple_knn (pyproject.toml): started
+  Building wheel for simple_knn (pyproject.toml): finished with status 'done'
+  Created wheel for simple_knn: filename=simple_knn-1.0.0-cp312-cp312-linux_x86_64.whl size=2978408 sha256=836204b888c0ec7bca1dcaeb091313c0bf8311142d454566ca02cc549d208c28
+  Stored in directory: /root/.cache/pip/wheels/38/9c/14/aac519e522d875f1cb4aa73c42207873feb40b76909453c541
+Successfully built simple_knn
+Installing collected packages: simple_knn
+Successfully installed simple_knn-1.0.0
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting mujoco
+  Downloading mujoco-3.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (26.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.7/26.7 MB 30.2 MB/s  0:00:00
+Collecting pyzmq
+  Downloading pyzmq-27.3.0-cp312-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (855 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 855.2/855.2 kB 173.8 MB/s  0:00:00
+Collecting tyro
+  Downloading tyro-1.0.17-py3-none-any.whl (217 kB)
+Collecting termcolor
+  Downloading termcolor-3.3.0-py3-none-any.whl (7.7 kB)
+Requirement already satisfied: pyyaml in /opt/venv/lib/python3.12/site-packages (6.0.3)
+Collecting open3d==0.19.0 (from -r build/requirements-radeon.txt (line 1))
+  Downloading open3d-0.19.0-cp312-cp312-manylinux_2_31_x86_64.whl (447.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 447.7/447.7 MB 32.9 MB/s  0:00:12
+Collecting e3nn==0.5.6 (from -r build/requirements-radeon.txt (line 2))
+  Downloading e3nn-0.5.6-py3-none-any.whl (448 kB)
+Collecting einops==0.8.1 (from -r build/requirements-radeon.txt (line 3))
+  Downloading einops-0.8.1-py3-none-any.whl (64 kB)
+Collecting pybullet==3.2.7 (from -r build/requirements-radeon.txt (line 4))
+  Downloading pybullet-3.2.7.tar.gz (80.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.5/80.5 MB 32.0 MB/s  0:00:02
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting pybullet_planning==0.6.0 (from -r build/requirements-radeon.txt (line 5))
+  Downloading pybullet_planning-0.6.0-py2.py3-none-any.whl (131 kB)
+Collecting plyfile==1.1.2 (from -r build/requirements-radeon.txt (line 6))
+  Downloading plyfile-1.1.2-py3-none-any.whl (36 kB)
+Collecting tqdm==4.67.1 (from -r build/requirements-radeon.txt (line 7))
+  Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+Collecting opencv-python==4.12.0.88 (from -r build/requirements-radeon.txt (line 8))
+  Downloading opencv_python-4.12.0.88-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (67.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.0/67.0 MB 38.7 MB/s  0:00:01
+Collecting zarr==3.1.1 (from -r build/requirements-radeon.txt (line 9))
+  Downloading zarr-3.1.1-py3-none-any.whl (255 kB)
+Requirement already satisfied: numpy>=1.18.0 in /opt/venv/lib/python3.12/site-packages (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (2.5.1)
+Collecting dash>=2.6.0 (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading dash-4.5.0-py3-none-any.whl (9.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 54.4 MB/s  0:00:00
+Collecting werkzeug>=3.0.0 (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading werkzeug-3.1.9-py3-none-any.whl (228 kB)
+Collecting flask>=3.0.0 (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading flask-3.1.3-py3-none-any.whl (103 kB)
+Collecting nbformat>=5.7.0 (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading nbformat-5.11.1-py3-none-any.whl (79 kB)
+Collecting configargparse (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading configargparse-1.9.0-py3-none-any.whl (37 kB)
+Collecting ipywidgets>=8.0.4 (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading ipywidgets-8.1.9-py3-none-any.whl (140 kB)
+Collecting addict (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading addict-2.4.0-py3-none-any.whl (3.8 kB)
+Requirement already satisfied: pillow>=9.3.0 in /opt/venv/lib/python3.12/site-packages (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (12.3.0)
+Requirement already satisfied: matplotlib>=3 in /opt/venv/lib/python3.12/site-packages (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (3.11.0)
+Requirement already satisfied: pandas>=1.0 in /opt/venv/lib/python3.12/site-packages (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (3.0.3)
+Collecting scikit-learn>=0.21 (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.2/9.2 MB 53.0 MB/s  0:00:00
+Collecting pyquaternion (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading pyquaternion-0.9.9-py3-none-any.whl (14 kB)
+Requirement already satisfied: sympy in /opt/venv/lib/python3.12/site-packages (from e3nn==0.5.6->-r build/requirements-radeon.txt (line 2)) (1.14.0)
+Collecting scipy (from e3nn==0.5.6->-r build/requirements-radeon.txt (line 2))
+  Downloading scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 35.3 MB/s  0:00:00
+Requirement already satisfied: torch>=1.8.0 in /opt/venv/lib/python3.12/site-packages (from e3nn==0.5.6->-r build/requirements-radeon.txt (line 2)) (2.11.0+rocm7.14.0)
+Collecting opt_einsum_fx>=0.1.4 (from e3nn==0.5.6->-r build/requirements-radeon.txt (line 2))
+  Downloading opt_einsum_fx-0.1.4-py3-none-any.whl (13 kB)
+Collecting imageio (from pybullet_planning==0.6.0->-r build/requirements-radeon.txt (line 5))
+  Downloading imageio-2.38.1-py3-none-any.whl (328 kB)
+Requirement already satisfied: ghalton in /opt/venv/lib/python3.12/site-packages (from pybullet_planning==0.6.0->-r build/requirements-radeon.txt (line 5)) (0.6.2)
+Collecting recordclass (from pybullet_planning==0.6.0->-r build/requirements-radeon.txt (line 5))
+  Downloading recordclass-0.24.1.tar.gz (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 162.7 MB/s  0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting psutil (from pybullet_planning==0.6.0->-r build/requirements-radeon.txt (line 5))
+  Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Collecting meshio>=4.3.11 (from pybullet_planning==0.6.0->-r build/requirements-radeon.txt (line 5))
+  Downloading meshio-5.3.5-py3-none-any.whl (166 kB)
+Collecting numpy>=1.18.0 (from open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.5/16.5 MB 39.3 MB/s  0:00:00
+Collecting donfig>=0.8 (from zarr==3.1.1->-r build/requirements-radeon.txt (line 9))
+  Downloading donfig-0.8.1.post1-py3-none-any.whl (21 kB)
+Collecting numcodecs>=0.14 (from numcodecs[crc32c]>=0.14->zarr==3.1.1->-r build/requirements-radeon.txt (line 9))
+  Downloading numcodecs-0.17.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 232.5 MB/s  0:00:00
+Requirement already satisfied: packaging>=22.0 in /opt/venv/lib/python3.12/site-packages (from zarr==3.1.1->-r build/requirements-radeon.txt (line 9)) (26.2)
+Requirement already satisfied: typing-extensions>=4.9 in /opt/venv/lib/python3.12/site-packages (from zarr==3.1.1->-r build/requirements-radeon.txt (line 9)) (4.15.0)
+Collecting absl-py (from mujoco)
+  Downloading absl_py-2.5.1-py3-none-any.whl (137 kB)
+Collecting etils[epath] (from mujoco)
+  Downloading etils-1.15.0-py3-none-any.whl (177 kB)
+Collecting glfw (from mujoco)
+  Downloading glfw-2.11.0-py2.py3-none-manylinux_2_28_x86_64.whl (248 kB)
+Collecting pyopengl (from mujoco)
+  Downloading pyopengl-3.1.10-py3-none-any.whl (3.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 182.2 MB/s  0:00:00
+Collecting websockets>=13 (from mujoco)
+  Downloading websockets-17.4-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (226 kB)
+Collecting docstring-parser>=0.16 (from tyro)
+  Downloading docstring_parser-0.18.0-py3-none-any.whl (22 kB)
+Collecting typeguard>=4.0.0 (from tyro)
+  Downloading typeguard-4.6.0-py3-none-any.whl (36 kB)
+Collecting plotly>=5.0.0 (from dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading plotly-7.1.0-py3-none-any.whl (9.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 45.8 MB/s  0:00:00
+Collecting importlib-metadata (from dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading importlib_metadata-10.1.0-py3-none-any.whl (32 kB)
+Collecting requests (from dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Collecting retrying (from dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading retrying-1.4.2-py3-none-any.whl (10 kB)
+Collecting nest-asyncio (from dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading nest_asyncio-1.6.0-py3-none-any.whl (5.2 kB)
+Requirement already satisfied: setuptools in /opt/venv/lib/python3.12/site-packages (from dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (81.0.0)
+Collecting janus>=1.0.0 (from dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading janus-2.0.0-py3-none-any.whl (12 kB)
+Collecting pydantic>=2.10 (from dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading pydantic-2.14.2-py3-none-any.whl (490 kB)
+Collecting comm (from dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading comm-0.2.3-py3-none-any.whl (7.3 kB)
+Collecting blinker>=1.9.0 (from flask>=3.0.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Collecting click>=8.1.3 (from flask>=3.0.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading click-8.5.0-py3-none-any.whl (125 kB)
+Collecting itsdangerous>=2.2.0 (from flask>=3.0.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Requirement already satisfied: jinja2>=3.1.2 in /opt/venv/lib/python3.12/site-packages (from flask>=3.0.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (3.1.6)
+Requirement already satisfied: markupsafe>=2.1.1 in /opt/venv/lib/python3.12/site-packages (from flask>=3.0.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (3.0.3)
+Collecting ipython>=6.1.0 (from ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading ipython-9.18.1-py3-none-any.whl (649 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 649.8/649.8 kB 75.4 MB/s  0:00:00
+Collecting traitlets>=4.3.1 (from ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading traitlets-5.16.1-py3-none-any.whl (86 kB)
+Collecting widgetsnbextension~=4.0.16 (from ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading widgetsnbextension-4.0.16-py3-none-any.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 123.0 MB/s  0:00:00
+Collecting jupyterlab_widgets~=3.0.17 (from ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading jupyterlab_widgets-3.0.17-py3-none-any.whl (217 kB)
+Collecting ipython-pygments-lexers>=1.0.0 (from ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading ipython_pygments_lexers-1.1.1-py3-none-any.whl (8.1 kB)
+Collecting jedi>=0.18.2 (from ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading jedi-0.20.1-py2.py3-none-any.whl (4.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 44.3 MB/s  0:00:00
+Collecting matplotlib-inline>=0.1.6 (from ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading matplotlib_inline-0.2.2-py3-none-any.whl (9.5 kB)
+Collecting pexpect>4.6 (from ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+Collecting prompt_toolkit<3.1.0,>=3.0.41 (from ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading prompt_toolkit-3.0.53-py3-none-any.whl (392 kB)
+Requirement already satisfied: pygments>=2.14.0 in /opt/venv/lib/python3.12/site-packages (from ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (2.20.0)
+Collecting stack_data>=0.6.0 (from ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+Collecting wcwidth>=0.1.4 (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading wcwidth-0.9.4-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (785 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 785.9/785.9 kB 170.6 MB/s  0:00:00
+Collecting parso<0.9.0,>=0.8.7 (from jedi>=0.18.2->ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading parso-0.8.7-py2.py3-none-any.whl (107 kB)
+Requirement already satisfied: contourpy>=1.0.1 in /opt/venv/lib/python3.12/site-packages (from matplotlib>=3->open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /opt/venv/lib/python3.12/site-packages (from matplotlib>=3->open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /opt/venv/lib/python3.12/site-packages (from matplotlib>=3->open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (4.63.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /opt/venv/lib/python3.12/site-packages (from matplotlib>=3->open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (1.5.0)
+Requirement already satisfied: pyparsing>=3 in /opt/venv/lib/python3.12/site-packages (from matplotlib>=3->open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (3.3.2)
+Requirement already satisfied: python-dateutil>=2.7 in /opt/venv/lib/python3.12/site-packages (from matplotlib>=3->open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (2.9.0.post0)
+Collecting rich (from meshio>=4.3.11->pybullet_planning==0.6.0->-r build/requirements-radeon.txt (line 5))
+  Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+Collecting fastjsonschema>=2.15 (from nbformat>=5.7.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading fastjsonschema-2.22.3-py3-none-any.whl (28 kB)
+Collecting jsonschema>=2.6 (from nbformat>=5.7.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Collecting jupyter-core!=5.0.*,>=4.12 (from nbformat>=5.7.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading jupyter_core-5.9.1-py3-none-any.whl (29 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=2.6->nbformat>=5.7.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=2.6->nbformat>=5.7.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=2.6->nbformat>=5.7.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=2.6->nbformat>=5.7.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+Collecting platformdirs>=2.5 (from jupyter-core!=5.0.*,>=4.12->nbformat>=5.7.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading platformdirs-4.14.4-py3-none-any.whl (35 kB)
+Collecting crc32c>=2.7 (from numcodecs[crc32c]>=0.14->zarr==3.1.1->-r build/requirements-radeon.txt (line 9))
+  Downloading crc32c-2.9.post0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (80 kB)
+Collecting opt-einsum (from opt_einsum_fx>=0.1.4->e3nn==0.5.6->-r build/requirements-radeon.txt (line 2))
+  Downloading opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+Collecting ptyprocess>=0.5 (from pexpect>4.6->ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting narwhals>=1.15.1 (from plotly>=5.0.0->dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading narwhals-2.28.0-py3-none-any.whl (490 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.10->dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Collecting pydantic-core==2.50.2 (from pydantic>=2.10->dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading pydantic_core-2.50.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 124.1 MB/s  0:00:00
+Collecting typing-extensions>=4.9 (from zarr==3.1.1->-r build/requirements-radeon.txt (line 9))
+  Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Collecting typing-inspection>=0.4.4 (from pydantic>=2.10->dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+Requirement already satisfied: six>=1.5 in /opt/venv/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib>=3->open3d==0.19.0->-r build/requirements-radeon.txt (line 1)) (1.17.0)
+Collecting joblib>=1.4.0 (from scikit-learn>=0.21->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn>=0.21->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Collecting cloudpickle>=3.0 (from joblib>=1.4.0->scikit-learn>=0.21->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Collecting executing>=1.2.0 (from stack_data>=0.6.0->ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading executing-2.3.0-py3-none-any.whl (29 kB)
+Collecting asttokens>=2.1.0 (from stack_data>=0.6.0->ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading asttokens-3.0.2-py3-none-any.whl (28 kB)
+Collecting pure-eval (from stack_data>=0.6.0->ipython>=6.1.0->ipywidgets>=8.0.4->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading pure_eval-0.2.4-py3-none-any.whl (11 kB)
+Requirement already satisfied: filelock in /opt/venv/lib/python3.12/site-packages (from torch>=1.8.0->e3nn==0.5.6->-r build/requirements-radeon.txt (line 2)) (3.29.1)
+Requirement already satisfied: networkx>=2.5.1 in /opt/venv/lib/python3.12/site-packages (from torch>=1.8.0->e3nn==0.5.6->-r build/requirements-radeon.txt (line 2)) (3.6.1)
+Requirement already satisfied: fsspec>=0.8.5 in /opt/venv/lib/python3.12/site-packages (from torch>=1.8.0->e3nn==0.5.6->-r build/requirements-radeon.txt (line 2)) (2026.4.0)
+Requirement already satisfied: rocm==7.14.0 in /opt/venv/lib/python3.12/site-packages (from rocm[libraries]==7.14.0->torch>=1.8.0->e3nn==0.5.6->-r build/requirements-radeon.txt (line 2)) (7.14.0)
+Requirement already satisfied: triton==3.7.1+git0263a6a6.rocm7.14.0 in /opt/venv/lib/python3.12/site-packages (from torch>=1.8.0->e3nn==0.5.6->-r build/requirements-radeon.txt (line 2)) (3.7.1+git0263a6a6.rocm7.14.0)
+Requirement already satisfied: rocm-bootstrap in /opt/venv/lib/python3.12/site-packages (from torch>=1.8.0->e3nn==0.5.6->-r build/requirements-radeon.txt (line 2)) (0.1.0)
+Requirement already satisfied: rocm-sdk-core==7.14.0 in /opt/venv/lib/python3.12/site-packages (from rocm==7.14.0->rocm[libraries]==7.14.0->torch>=1.8.0->e3nn==0.5.6->-r build/requirements-radeon.txt (line 2)) (7.14.0)
+Requirement already satisfied: rocm-sdk-libraries==7.14.0 in /opt/venv/lib/python3.12/site-packages (from rocm[libraries]==7.14.0->torch>=1.8.0->e3nn==0.5.6->-r build/requirements-radeon.txt (line 2)) (7.14.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /opt/venv/lib/python3.12/site-packages (from sympy->e3nn==0.5.6->-r build/requirements-radeon.txt (line 2)) (1.3.0)
+Collecting zipp (from etils[epath]->mujoco)
+  Downloading zipp-4.1.2-py3-none-any.whl (10 kB)
+Collecting charset_normalizer<4,>=2 (from requests->dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Collecting idna<4,>=2.5 (from requests->dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading idna-3.20-py3-none-any.whl (69 kB)
+Collecting urllib3<3,>=1.26 (from requests->dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Collecting certifi>=2023.5.7 (from requests->dash>=2.6.0->open3d==0.19.0->-r build/requirements-radeon.txt (line 1))
+  Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+Collecting markdown-it-py>=2.2.0 (from rich->meshio>=4.3.11->pybullet_planning==0.6.0->-r build/requirements-radeon.txt (line 5))
+  Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->meshio>=4.3.11->pybullet_planning==0.6.0->-r build/requirements-radeon.txt (line 5))
+  Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Building wheels for collected packages: pybullet, recordclass
+  Building wheel for pybullet (pyproject.toml): started
+  Building wheel for pybullet (pyproject.toml): finished with status 'done'
+  Created wheel for pybullet: filename=pybullet-3.2.7-cp312-cp312-linux_x86_64.whl size=99086728 sha256=37d518c9f7245c1cccadb03567632f454b680ab1678434d545d18d4837d41210
+  Stored in directory: /root/.cache/pip/wheels/69/ec/65/69b64bec1dd143108a1703099be4ff092b2ba1decd86a37129
+  Building wheel for recordclass (pyproject.toml): started
+  Building wheel for recordclass (pyproject.toml): finished with status 'done'
+  Created wheel for recordclass: filename=recordclass-0.24.1-cp312-cp312-linux_x86_64.whl size=565722 sha256=63a7244526aae9c283fb443c7170ffcc2cae26c572b6ec31cd5546be0018e711
+  Stored in directory: /root/.cache/pip/wheels/96/f9/81/18a861791f76324c3d1dc99c0ca62d8d58b5b5c2da491a4dae
+Successfully built pybullet recordclass
+Installing collected packages: pyopengl, pybullet, pure-eval, ptyprocess, glfw, addict, zipp, widgetsnbextension, werkzeug, websockets, wcwidth, urllib3, typing-extensions, traitlets, tqdm, threadpoolctl, termcolor, rpds-py, retrying, recordclass, pyzmq, psutil, platformdirs, pexpect, parso, opt-einsum, numpy, nest-asyncio, narwhals, mdurl, jupyterlab_widgets, janus, itsdangerous, ipython-pygments-lexers, idna, fastjsonschema, executing, etils, einops, donfig, docstring-parser, crc32c, configargparse, comm, cloudpickle, click, charset_normalizer, certifi, blinker, attrs, asttokens, annotated-types, absl-py, typing-inspection, typeguard, stack_data, scipy, requests, referencing, pyquaternion, pydantic-core, prompt_toolkit, plyfile, plotly, opencv-python, numcodecs, matplotlib-inline, markdown-it-py, jupyter-core, joblib, jedi, importlib-metadata, imageio, flask, tyro, scikit-learn, rich, pydantic, jsonschema-specifications, ipython, zarr, mujoco, meshio, jsonschema, ipywidgets, dash, pybullet_planning, nbformat, open3d, opt_einsum_fx, e3nn
+  Attempting uninstall: typing-extensions
+    Found existing installation: typing_extensions 4.15.0
+    Uninstalling typing_extensions-4.15.0:
+      Successfully uninstalled typing_extensions-4.15.0
+  Attempting uninstall: tqdm
+    Found existing installation: tqdm 4.68.4
+    Uninstalling tqdm-4.68.4:
+      Successfully uninstalled tqdm-4.68.4
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.5.1
+    Uninstalling numpy-2.5.1:
+      Successfully uninstalled numpy-2.5.1
+Successfully installed absl-py-2.5.1 addict-2.4.0 annotated-types-0.8.0 asttokens-3.0.2 attrs-26.1.0 blinker-1.9.0 certifi-2026.10.23 charset_normalizer-3.5.2 click-8.5.0 cloudpickle-3.1.2 comm-0.2.3 configargparse-1.9.0 crc32c-2.9.post0 dash-4.5.0 docstring-parser-0.18.0 donfig-0.8.1.post1 e3nn-0.5.6 einops-0.8.1 etils-1.15.0 executing-2.3.0 fastjsonschema-2.22.3 flask-3.1.3 glfw-2.11.0 idna-3.20 imageio-2.38.1 importlib-metadata-10.1.0 ipython-9.18.1 ipython-pygments-lexers-1.1.1 ipywidgets-8.1.9 itsdangerous-2.2.0 janus-2.0.0 jedi-0.20.1 joblib-1.6.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 jupyter-core-5.9.1 jupyterlab_widgets-3.0.17 markdown-it-py-4.2.0 matplotlib-inline-0.2.2 mdurl-0.1.2 meshio-5.3.5 mujoco-3.17.0 narwhals-2.28.0 nbformat-5.11.1 nest-asyncio-1.6.0 numcodecs-0.17.1 numpy-2.2.6 open3d-0.19.0 opencv-python-4.12.0.88 opt-einsum-3.4.0 opt_einsum_fx-0.1.4 parso-0.8.7 pexpect-4.9.0 platformdirs-4.14.4 plotly-7.1.0 plyfile-1.1.2 prompt_toolkit-3.0.53 psutil-7.2.2 ptyprocess-0.7.0 pure-eval-0.2.4 pybullet-3.2.7 pybullet_planning-0.6.0 pydantic-2.14.2 pydantic-core-2.50.2 pyopengl-3.1.10 pyquaternion-0.9.9 pyzmq-27.3.0 recordclass-0.24.1 referencing-0.37.0 requests-2.34.2 retrying-1.4.2 rich-15.0.0 rpds-py-2026.9.1 scikit-learn-1.9.1 scipy-1.18.1 stack_data-0.6.3 termcolor-3.3.0 threadpoolctl-3.7.0 tqdm-4.67.1 traitlets-5.16.1 typeguard-4.6.0 typing-extensions-4.16.0 typing-inspection-0.4.5 tyro-1.0.17 urllib3-2.8.0 wcwidth-0.9.4 websockets-17.4 werkzeug-3.1.9 widgetsnbextension-4.0.16 zarr-3.1.1 zipp-4.1.2
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Obtaining file:///workspace/src
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: SplatSim
+  Building editable for SplatSim (pyproject.toml): started
+  Building editable for SplatSim (pyproject.toml): finished with status 'done'
+  Created wheel for SplatSim: filename=splatsim-0.1.0-0.editable-py3-none-any.whl size=9764 sha256=f0ba55f163124e9ba1bea012adedfcc1985f21c57a2b3c2d7f58e668ffe70322
+  Stored in directory: /tmp/pip-ephem-wheel-cache-tceax51j/wheels/0f/4e/71/3509d4394b123c3d14c33ca2120733fed6ef51b53013c5d412
+Successfully built SplatSim
+Installing collected packages: SplatSim
+Successfully installed SplatSim-0.1.0
+pybullet build time: Nov  4 2026 14:47:07
+imports ok 2.11.0+rocm7.14.0 7.14.60850 AMD Radeon Pro W7900D
+=== bootstrap done 2026-11-04T14:48:14+00:00

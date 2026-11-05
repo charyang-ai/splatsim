@@ -1,0 +1,30 @@
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:58);RobotEnv.get_obs (gello/env.py:72);ZMQClientRobot.get_observations (robot_node.py:152);_load_from_bytes (torch/storage.py:535);load (torch/serialization.py:1603);_legacy_load (torch/serialization.py:1865);_legacy_load.<locals>.persistent_load (torch/serialization.py:1800);default_restore_location (torch/serialization.py:734);_deserialize (torch/serialization.py:668);_StorageBase.to (torch/storage.py:289);_to (torch/_utils.py:107) 8
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:56);ZMQClientRobot.command_joint_state (robot_node.py:117) 2
+<module> (run_env_sim.py:372);main (run_env_sim.py:361) 56
+<module> (run_env_sim.py:372);main (run_env_sim.py:359) 13
+<module> (run_env_sim.py:372);main (run_env_sim.py:358);RobotEnv.step (gello/env.py:58);RobotEnv.get_obs (gello/env.py:86);ZMQClientRobot.get_observations (robot_node.py:152);_rebuild_tensor_v2 (torch/_utils.py:236);load (torch/serialization.py:1603);_legacy_load (torch/serialization.py:1877) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:58);RobotEnv.get_obs (gello/env.py:72);ZMQClientRobot.get_observations (robot_node.py:152);_load_from_bytes (torch/storage.py:535);load (torch/serialization.py:1603);_legacy_load (torch/serialization.py:1877) 5
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:58);RobotEnv.get_obs (gello/env.py:72);ZMQClientRobot.get_observations (robot_node.py:152);_load_from_bytes (torch/storage.py:535);load (torch/serialization.py:1603);_legacy_load (torch/serialization.py:1630) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:325);ReplayTrajectoryAgent.act (replay_trajectory_agent.py:85);ReplayTrajectoryAgent.next_trajectory_step (replay_trajectory_agent.py:80);ZMQClientRobot.set_object_pose (robot_node.py:139) 3
+<module> (run_env_sim.py:372);main (run_env_sim.py:325);ReplayTrajectoryAgent.act (replay_trajectory_agent.py:85);ReplayTrajectoryAgent.next_trajectory_step (replay_trajectory_agent.py:62) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:58);RobotEnv.get_obs (gello/env.py:72);ZMQClientRobot.get_observations (robot_node.py:152);_load_from_bytes (torch/storage.py:535);load (torch/serialization.py:1603);_legacy_load (torch/serialization.py:1865);_legacy_load.<locals>.persistent_load (torch/serialization.py:1800);default_restore_location (torch/serialization.py:734);_deserialize (torch/serialization.py:667);_validate_device (torch/serialization.py:629) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:325);ReplayTrajectoryAgent.act (replay_trajectory_agent.py:94) 17
+<module> (run_env_sim.py:372);main (run_env_sim.py:325);ReplayTrajectoryAgent.act (replay_trajectory_agent.py:93) 10
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:56);ZMQClientRobot.num_dofs (robot_node.py:85);Socket.send (zmq/sugar/socket.py:713) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:358) 6
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:53);ZMQClientRobot.num_dofs (robot_node.py:85) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:58);RobotEnv.get_obs (gello/env.py:72);ZMQClientRobot.get_observations (robot_node.py:152);_load_from_bytes (torch/storage.py:535);load (torch/serialization.py:1523) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:325);ReplayTrajectoryAgent.act (replay_trajectory_agent.py:93);ReplayTrajectoryAgent.next_trajectory_step (replay_trajectory_agent.py:82);ZMQClientRobot.set_object_pose (robot_node.py:139) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:325);ReplayTrajectoryAgent.act (replay_trajectory_agent.py:95) 2
+<module> (run_env_sim.py:372);main (run_env_sim.py:325);ReplayTrajectoryAgent.act (replay_trajectory_agent.py:97) 310
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:56);ZMQClientRobot.num_dofs (robot_node.py:85) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:58);ZMQClientRobot.command_joint_state (robot_node.py:117) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:58);RobotEnv.get_obs (gello/env.py:72);ZMQClientRobot.get_observations (robot_node.py:152);_load_from_bytes (torch/storage.py:535);load (torch/serialization.py:1603);_legacy_load (torch/serialization.py:1865);_legacy_load.<locals>.persistent_load (torch/serialization.py:1800);default_restore_location (torch/serialization.py:734);_deserialize (torch/serialization.py:668);_StorageBase.to (torch/storage.py:289);_get_device_index (torch/cuda/_utils.py:545) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:58);RobotEnv.get_obs (gello/env.py:72);ZMQClientRobot.get_observations (robot_node.py:152) 2497
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:58);RobotEnv.get_obs (gello/env.py:72);ZMQClientRobot.get_observations (robot_node.py:152);_load_from_bytes (torch/storage.py:535);load (torch/serialization.py:1603);_legacy_load (torch/serialization.py:1865);_legacy_load.<locals>.persistent_load (torch/serialization.py:1800);_element_size (torch/_utils.py:917) 1
+_rebuild_tensor_v2 (torch/_utils.py:247);_rebuild_tensor (torch/_utils.py:196) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:58);RobotEnv.get_obs (gello/env.py:72);ZMQClientRobot.get_observations (robot_node.py:152);_load_from_bytes (torch/storage.py:535);load (torch/serialization.py:1483) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:358);RobotEnv.step (gello/env.py:58);RobotEnv.get_obs (gello/env.py:72);ZMQClientRobot.get_observations (robot_node.py:152) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:352);RobotEnv.step (gello/env.py:55);ZMQClientRobot.num_dofs (robot_node.py:85) 1
+<module> (run_env_sim.py:372);main (run_env_sim.py:360) 49
+<module> (run_env_sim.py:372);main (run_env_sim.py:325);ReplayTrajectoryAgent.act (replay_trajectory_agent.py:85) 1
