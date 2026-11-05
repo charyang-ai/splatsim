@@ -31,3 +31,11 @@ MUJOCO_LOG.TXT
 
 # build
 **/build/*
+
+# radeon port: downloaded scenes and trajectories, local notes
+_gen/
+BLOG.md
+data/bc_data/
+data/output/
+data/test_data/
+!results/**
