@@ -3,8 +3,9 @@
 
 The README links three zips: test_data.zip (38.9 GB), output.zip (20.8 GB) and
 bc_data.zip (76 MB). The apple-on-plate replay reads one COLMAP scene, three
-splats and the trajectories, so this script reads each zip's central directory
-with HTTP range requests and extracts only those members into data/.
+splats and the trajectories, so this script reads the two large zips' central
+directories with HTTP range requests and extracts only those members into
+data/. The trajectory zip is downloaded whole.
 
     python radeon/fetch_data.py [--data data] [--views 0 3 120 240 360 480]
 """
@@ -24,6 +25,24 @@ OUTPUT = "1rAUkf7l2ZZqG1Bm3ih6cAO5HCd9dSTO-"
 BC_DATA = "1NhSBNYMi51hETAspk6vN7F-Ih1134_lt"
 
 
+def open_range(url: str, start: int, end=None):
+    """GET bytes start..end, retrying with backoff for about ten minutes."""
+    rng = f"bytes={start}-" if end is None else f"bytes={start}-{end}"
+    req = urllib.request.Request(url, headers={"Range": rng})
+    for attempt in range(12):
+        try:
+            r = urllib.request.urlopen(req, timeout=120)
+            if r.status != 206:
+                raise IOError(f"expected HTTP 206, got {r.status}")
+            return r
+        except Exception as exc:  # noqa: BLE001
+            if attempt == 11:
+                raise
+            wait = min(60, 5 * 2 ** attempt)
+            print(f"retry {attempt + 1} at byte {start} in {wait}s: {exc}", file=sys.stderr)
+            time.sleep(wait)
+
+
 class RangeReader(io.RawIOBase):
     """Seekable view of a remote file. Sequential reads share one HTTP stream."""
 
@@ -33,19 +52,7 @@ class RangeReader(io.RawIOBase):
             self.size = int(r.headers["Content-Range"].rsplit("/", 1)[1])
 
     def _open(self, start, end=None):
-        rng = f"bytes={start}-" if end is None else f"bytes={start}-{end}"
-        req = urllib.request.Request(self.url, headers={"Range": rng})
-        for attempt in range(6):
-            try:
-                r = urllib.request.urlopen(req, timeout=120)
-                if r.status != 206:
-                    raise IOError(f"expected HTTP 206, got {r.status}")
-                return r
-            except Exception as exc:  # noqa: BLE001
-                if attempt == 5:
-                    raise
-                print(f"retry {attempt + 1} at byte {start}: {exc}", file=sys.stderr)
-                time.sleep(5 * (attempt + 1))
+        return open_range(self.url, start, end)
 
     def readable(self):
         return True
@@ -106,6 +113,25 @@ def extract(file_id: str, dest: Path, patterns) -> None:
               f"  {info.filename}")
 
 
+def download_whole(file_id: str, target: Path) -> Path:
+    """Small archives with many members: fetch the whole zip, resuming a partial download."""
+    url = URL.format(file_id)
+    with open_range(url, 0, 0) as r:
+        size = int(r.headers["Content-Range"].rsplit("/", 1)[1])
+    target.parent.mkdir(parents=True, exist_ok=True)
+    have = target.stat().st_size if target.exists() else 0
+    while have < size:
+        try:
+            with open_range(url, have) as r, open(target, "ab") as f:
+                while chunk := r.read(1 << 20):
+                    f.write(chunk)
+                    have += len(chunk)
+        except Exception as exc:  # noqa: BLE001
+            print(f"stream error at byte {have}: {exc}; resuming", file=sys.stderr)
+        print(f"  {have / 2**20:8.1f}/{size / 2**20:.1f} MiB  {target.name}")
+    return target
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="data")
@@ -121,7 +147,10 @@ def main() -> None:
     extract(OUTPUT, dest, [f"output/{r}/cfg_args", f"output/{r}/cameras.json",
                            f"output/{r}/point_cloud/iteration_30000/*", *splats, *renders])
     extract(TEST_DATA, dest, [f"test_data/{r}/sparse/*", f"test_data/{r}/images/*"])
-    extract(BC_DATA, dest, ["bc_data/gello/*"])
+    # 37,664 pickles of about 2 KB each: one sequential download beats one range request per member.
+    with zipfile.ZipFile(download_whole(BC_DATA, dest / "bc_data.zip")) as zf:
+        zf.extractall(dest)
+    print(f"bc_data: {sum(1 for _ in (dest / 'bc_data' / 'gello').rglob('*.pkl'))} steps")
 
 
 if __name__ == "__main__":

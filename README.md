@@ -66,7 +66,7 @@ git -C submodules/gaussian-splatting-wrapper/gaussian_splatting submodule update
   submodules/diff-gaussian-rasterization
 ```
 
-**2. 数据。** 上游 README 链接的三个 Google Drive 压缩包一共 60 GB。`radeon/fetch_data.py` 用 HTTP range 请求读压缩包的中央目录，只解出 `robot_iphone` 场景、苹果、盘子等物体的 splat、轨迹和几张作者的渲染图，约 1.4 GB，放进 `data/`：
+**2. 数据。** 上游 README 链接的三个 Google Drive 压缩包一共 60 GB。`radeon/fetch_data.py` 用 HTTP range 请求读压缩包的中央目录，只解出 `robot_iphone` 场景、苹果、盘子等物体的 splat 和几张作者的渲染图；76 MB 的轨迹包整个下载。一共约 1.5 GB，放进 `data/`：
 
 ```bash
 python radeon/fetch_data.py
